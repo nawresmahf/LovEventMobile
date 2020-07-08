@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="mango">
+    <ion-title>S'identifier</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding='true'>
+  <div class="center logo">
+    <img src="assets/images/logo.png" class="smallLogo" />
+  </div>
+  <form>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Email </ion-label>
+        <ion-input autocomplete="off" type="email" class=" form-control" name="email" [(ngModel)]="postData.email">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Mot de passe</ion-label>
+        <ion-input autocomplete="off" type="passwlord" name="mdp" minlength="6" [(ngModel)]="postData.mdp"></ion-input>
+      </ion-item>
+      <ion-item lines='none'>
+
+        <a routerLink='/signup'>Mot de passe oublié?</a>
+      </ion-item>
+      <ion-item lines='none '>
+        <a routerLink='/signup'>Créer un compte !</a>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" share="round" color="danger" (click)="loginAction()">Se connecter </ion-button>
+  </form>
+</ion-content>

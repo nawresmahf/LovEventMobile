@@ -1,0 +1,23 @@
+ion-slide {
+  padding: 160px 20px 160px 20px;
+  display: block;
+
+  img {
+    width: 600px;
+    height: 300px;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
+
+video {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  top: 100;
+  left: 100;
+
+}
